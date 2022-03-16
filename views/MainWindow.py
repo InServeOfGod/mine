@@ -13,8 +13,9 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle(self.model.title)
         self.setWindowIcon(self.model.icon)
+        self.setFixedSize(300, 300)
 
-    def main(self):
+    def main(self) -> None:
         self.mainLayout.addWidget(self.mainFrame)
         self.setCentralWidget(self.mainFrame)
         self.show()

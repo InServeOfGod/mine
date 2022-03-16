@@ -12,7 +12,7 @@ class ButtonMines:
 
         self._buttons()
 
-    def _buttons(self):
+    def _buttons(self) -> None:
         for row in range(self.count):
             for col in range(self.count):
                 btn = QPushButton()
@@ -21,5 +21,5 @@ class ButtonMines:
                 btn.clicked.connect(partial(self.controller.check_bomb, btn))
                 self.buttonsLayout.addWidget(btn, row, col)
 
-    def main(self):
+    def main(self) -> None:
         self.win.mainFrame.setLayout(self.buttonsLayout)
