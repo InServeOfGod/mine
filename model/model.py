@@ -15,8 +15,8 @@ class Model:
         self.btn_icon = QIcon(os.path.join(self.root, "./assets/img/radioactivity.png"))
         self.secure_icon = QIcon(os.path.join(self.root, "./assets/img/shield.png"))
 
-        self.easy = 20
+        self.easy = 10
         self.medium = 30
-        self.hard = 40
-        self.veteran = 50
+        self.hard = 60
+        self.veteran = 90
         self.difficulty = self.medium
